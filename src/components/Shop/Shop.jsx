@@ -5,7 +5,6 @@ import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import {addToDb} from '../../utilities/fakedb'
 const Shop = () => {
-    let selectedItem = 0;
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -15,13 +14,6 @@ const Shop = () => {
   }, []);
   
   const [cart, setCart] = useState([]);
-
-
-
-  // const totalItem=(props)=>{
-
-  //    document.getElementById('items').innerHTML = "Selected Item: "+ props
-  // }
 
   const handleAddToCart = (product) => {
 
